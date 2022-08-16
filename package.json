@@ -2,6 +2,12 @@
   "name": "ignews",
   "version": "0.1.0",
   "private": true,
+  "paths": [
+    "lib"
+  ],
+  "rootDirs": [
+    "src"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
