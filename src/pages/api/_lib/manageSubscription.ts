@@ -42,7 +42,7 @@ export async function saveSubscription(
         )
       );
     } catch (e) {
-      console.log(e);
+      // console.log(e);
     }
   }
 }

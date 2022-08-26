@@ -13,9 +13,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
     <PrismicProvider client={client}>
     <SessionProvider session={session}>
         <Header></Header>
-       <Component {...pageProps} />;
+       <Component {...pageProps} />
        </SessionProvider>
-    \</PrismicProvider>
+    </PrismicProvider>
     </>
   )
 }
