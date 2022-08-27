@@ -43,7 +43,7 @@ export const getServerSideProps: GetServerSideProps = async ({req, params}) => {
   const session = await getSession({req});
     const { slug }  = await params
 
-if (!session.activeSubscription) {
+if (!session?.activeSubscription) {
     return {
         redirect: {
             destination: '/',
@@ -56,7 +56,7 @@ if (!session.activeSubscription) {
     const response = await client.getByUID('publication', String(slug), {
         
 
-    }) 
+    })
 
     // const response = await client.buildQueryURL('https://ignewsmariobr.cdn.prismic.io/api/v2/documents/search?ref=YwjIJhYAACcASV5a&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22Yv_pIxYAACYAIf-H%22%29+%5D%5D', {})
     
