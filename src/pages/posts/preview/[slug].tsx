@@ -40,9 +40,9 @@ export default function PostPreview({post}: PostProps){
 
     return (
        <>
-        {/* <Head>
+        <Head>
             <title>Ignews</title>
-        </Head> */}
+        </Head>
         <main className={styles.container}>
             <article className={styles.post}>
                 <h1>{post.title}</h1>
